@@ -1,11 +1,8 @@
-# *
-    CIS 470 Homework #2*
+# *CIS 470 Homework #2*
 
-###### 
-    By: Matthew Greeson
+###### By: Matthew Greeson
 
-###### 
-    Date Due: 3/5/25
+###### Date Due: 3/5/25
 
 ## Five Choosen Functions:
 
@@ -15,11 +12,7 @@
 4. A function that calculates the nth Fibonacci number.
 5. A function that checks if a given string is a valid ISBN number.
 
----
-
 ## Requirements Section:
-
----
 
 ### Valid Inputs
 
