@@ -1,8 +1,8 @@
 # *CIS 470 Homework #2*
 
-###### By: Matthew Greeson
+**By: Matthew Greeson**
 
-###### Date Due: 3/5/25
+**Date Due: 3/5/25**
 
 ## Five Selected Functions:
 
