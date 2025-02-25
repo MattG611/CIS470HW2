@@ -11,11 +11,3 @@
 3. A function that converts US gallons per week to liters per week.
 4. A function that calculates the nth Fibonacci number.
 5. A function that checks if a given string is a valid ISBN number.
-
-## Requirements Section:
-
-### Valid Inputs
-
-### Expected Outputs
-
-### Invalid Input Error Messages
