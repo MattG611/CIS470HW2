@@ -4,7 +4,7 @@
 
 ###### Date Due: 3/5/25
 
-## Five Choosen Functions:
+## Five Selected Functions:
 
 1. A function that reverses a string.
 2. A function that converts a decimal number to binary.
