@@ -69,8 +69,8 @@
 
 ##### 1.) ECT Coverage:
 
-* Valid partitions: Positive integers, zero.
-* Invalid partitions: Negative numbers, non-integer values.
+* **Valid partitions:** Positive integers, zero.
+* **Invalid partitions:** Negative numbers, non-integer values.
 
 ##### 2.) BVT Coverage:
 
@@ -83,12 +83,12 @@
 
 ###### Valid Inputs:
 
-* Expected Range: Non-negative integers including 0 and any positive integer (valid within the limits of the system’s integer size).
-* Variable Type: Integer (int).
+* **Expected Range:** Non-negative integers including 0 and any positive integer (valid within the limits of the system’s integer size).
+* **Variable Type:** Integer (int).
 
 ###### Expected Outputs:
 
-* Expected Range: The output will be a string representing the binary equivalent of the input decimal number. For example:
+* **Expected Range:** The output will be a string representing the binary equivalent of the input decimal number. For example:
   * Input 0 → Output "0"
   * Input 1 → Output "1"
   * Input 5 → Output "101"
@@ -98,15 +98,15 @@
 
 ###### Invalid Input Error Message:
 
-* For Negative Input: "Invalid input: Decimal number must be non-negative."
-* For Non-Integer Input: "Invalid input: Decimal number must be integer."
+* **For Negative Input:** "Invalid input: Decimal number must be non-negative."
+* **For Non-Integer Input:** "Invalid input: Decimal number must be integer."
 
 ## 3.) Convert US Gallons per Week to Liters per Week
 
 ##### 1.) ECT Coverage:
 
-* Valid partitions: Positive numbers (integers and decimals).
-* Invalid partitions: Negative numbers, non-numeric input.
+* **Valid partitions:** Positive numbers (integers and decimals).
+* **Invalid partitions:** Negative numbers, non-numeric input.
 
 ##### 2.) BVT Coverage:
 
@@ -119,9 +119,26 @@
 
 ###### Valid Inputs:
 
-###### Expected Outputs:
+* **0 gallons/week**
+* **0.1 gallons/week**
+* **999.9 gallons/week**
+* **1000 gallons/week**
+
+###### **Expected Outputs:**
+
+* **0 gallons/week** → **0 liters/week**
+  (0 * 3.78541 = 0 liters)
+* **0.1 gallons/week** → approximately **0.378541 liters/week**
+  (0.1 * 3.78541 = 0.378541 liters)
+* **999.9 gallons/week** → approximately **3785.031459** **liters/week**
+  (999.9 * 3.78541 = 3785.031459 liters)
+* **1000 gallons/week** → exactly **3785.41 liters/week**
+  (1000 * 3.78541 = 3785.41 liters)
 
 ###### Invalid Input Error Message:
+
+* **Negative input:** "Input must be a non-negative number."
+* **Non-numeric input:** "Invalid input: input must be a numeric value."
 
 ## 4.) Calculate the nth Fibonacci Number
 
