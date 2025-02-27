@@ -1,8 +1,8 @@
 # CIS 470 Homework #2
 
-By: Matthew Greeson
+**By: Matthew Greeson**
 
-Date Due: 3/5/25
+**Date Due: 3/5/25**
 
 ## Five Selected Functions:
 
@@ -41,28 +41,28 @@ Date Due: 3/5/25
 
 ###### Expected Outputs:
 
-* For input "" (empty string - BVT min):
+* **For input "" (empty string - BVT min)**
   Output: IllegalArgumentException("Invalid input: String cannot be null or empty.")
-* For input "a" (single character - BVT min+):
+* **For input "a" (single character - BVT min+):**
   Output: "a"
-* For input "ab" (two-character string - BVT min+):
+* **For input "ab" (two-character string - BVT min+):**
   Output: "ba"
-* For input "hello" (normal string):
+* **For input "hello" (normal string):**
   Output: "olleh"
-* For input "12345" (numeric characters):
+* **For input "12345" (numeric characters):**
   Output: "54321"
-* For input "Hello, World!" (special characters):
+* **For input "Hello, World!" (special characters):**
   Output: "!dlroW ,olleH"
-* For input "racecar" (palindrome):
+* **For input "racecar" (palindrome):**
   Output: "racecar" (same as input, as it's a palindrome)
-* For input "ThisStringIsSuperLongAndIsUsedForTestingPurposesOnlyInThisAssignment" (large but valid string - BVT max-):
+* **For input "ThisStringIsSuperLongAndIsUsedForTestingPurposesOnlyInThisAssignment" (large but valid string - BVT max-):**
   Output: "tnemmAssiTnIylnoesoruPgnitseTroFdesUdnAgnorSgnirtSsiht"
 
 ###### Invalid Input Error Message:
 
-* For empty string (""):
+* **For empty string (""):**
   Error Message: "Invalid input: String cannot be null or empty."
-* For null string (null):
+* **For null string (null):**
   Error Message: "Invalid input: String cannot be null or empty."
 
 ## 2.) Convert Decimal Number to Binary
