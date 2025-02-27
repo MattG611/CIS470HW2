@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/matthewgreeson/Desktop/CIS470Work/CIS470HW#2/CIS470HW2/src/cis470hw2/target/surefire/surefirebooter7475337759394113840.jar /Users/matthewgreeson/Desktop/CIS470Work/CIS470HW#2/CIS470HW2/src/cis470hw2/target/surefire 2025-02-27T11-43-15_114-jvmRun1 surefire5734816810659036074tmp surefire_05679373022678862178tmp"/>
+    <property name="sun.java.command" value="/Users/matthewgreeson/Desktop/CIS470Work/CIS470HW#2/CIS470HW2/src/cis470hw2/target/surefire/surefirebooter5955249730340070781.jar /Users/matthewgreeson/Desktop/CIS470Work/CIS470HW#2/CIS470HW2/src/cis470hw2/target/surefire 2025-02-27T11-58-40_003-jvmRun1 surefire9322986426604798735tmp surefire_015126224603869675801tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/matthewgreeson/Desktop/CIS470Work/CIS470HW#2/CIS470HW2/src/cis470hw2/target/test-classes:/Users/matthewgreeson/Desktop/CIS470Work/CIS470HW#2/CIS470HW2/src/cis470hw2/target/classes:/Users/matthewgreeson/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.2/junit-jupiter-api-5.7.2.jar:/Users/matthewgreeson/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/matthewgreeson/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/matthewgreeson/.m2/repository/org/junit/platform/junit-platform-commons/1.7.2/junit-platform-commons-1.7.2.jar:"/>
@@ -29,7 +29,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/matthewgreeson/Desktop/CIS470Work/CIS470HW#2/CIS470HW2/src/cis470hw2/target/surefire/surefirebooter7475337759394113840.jar"/>
+    <property name="surefire.real.class.path" value="/Users/matthewgreeson/Desktop/CIS470Work/CIS470HW#2/CIS470HW2/src/cis470hw2/target/surefire/surefirebooter5955249730340070781.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="23.0.2"/>

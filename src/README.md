@@ -1,4 +1,3 @@
-
 # CIS 470 Homework #2
 
 By: Matthew Greeson
@@ -38,11 +37,33 @@ Date Due: 3/5/25
 * "12345" (numeric characters)
 * "Hello, World!" (special characters)
 * "racecar" (palindrome)
-* "ThisStringIsSuperLongAndIsUsedForTestingPurposesOnlyInThisAssignment" (large but valid string - BVT max-)
+* "ThisStringIsSuperLongAndIsUsedForTestingPurposesOnlyInThisAssignment" (long and large but a valid string - BVT max-)
 
 ###### Expected Outputs:
 
+* For input "" (empty string - BVT min):
+  Output: IllegalArgumentException("Invalid input: String cannot be null or empty.")
+* For input "a" (single character - BVT min+):
+  Output: "a"
+* For input "ab" (two-character string - BVT min+):
+  Output: "ba"
+* For input "hello" (normal string):
+  Output: "olleh"
+* For input "12345" (numeric characters):
+  Output: "54321"
+* For input "Hello, World!" (special characters):
+  Output: "!dlroW ,olleH"
+* For input "racecar" (palindrome):
+  Output: "racecar" (same as input, as it's a palindrome)
+* For input "ThisStringIsSuperLongAndIsUsedForTestingPurposesOnlyInThisAssignment" (large but valid string - BVT max-):
+  Output: "tnemmAssiTnIylnoesoruPgnitseTroFdesUdnAgnorSgnirtSsiht"
+
 ###### Invalid Input Error Message:
+
+* For empty string (""):
+  Error Message: "Invalid input: String cannot be null or empty."
+* For null string (null):
+  Error Message: "Invalid input: String cannot be null or empty."
 
 ## 2.) Convert Decimal Number to Binary
 
