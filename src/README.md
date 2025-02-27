@@ -12,7 +12,6 @@
 4. A function that calculates the nth Fibonacci number.
 5. A function that checks if a given string is a valid ISBN number.
 
-
 ### **1.) Reverse a String**
 
 **1.) ECT Coverage:**
@@ -60,11 +59,25 @@
 * **max** : System max integer
 * **max+** : Integer overflow (invalid)
 
-#### **Valid Inputs:**
+### **Valid Inputs:**
+
+* **Expected Range:** Non-negative integers including 0 and any positive integer (valid within the limits of the system’s integer size).
+* **Variable Type:** Integer (int).
 
 #### **Expected Outputs:**
 
+* **Expected Range:** The output will be a string representing the binary equivalent of the input decimal number. For example:
+  * Input 0 → Output "0"
+  * Input 1 → Output "1"
+  * Input 5 → Output "101"
+  * Input 112 → Output "1110000"
+  * Input Interger.MAX_VALUE → Output: a 31-bit binary string representing Interger.MAX_VALUE.
+* **Output Variable Type:** String.
+
 #### **Invalid Input Error Message:**
+
+* **For Negative Input: "Invalid input: Decimal number must be non-negative."**
+* **For Non-Integer Input: "Invalid input: Decimal number must be integer."**
 
 ### **3. Convert US Gallons per Week to Liters per Week**
 

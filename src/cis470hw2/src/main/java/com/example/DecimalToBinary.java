@@ -1,12 +1,16 @@
 package com.example;
 public class DecimalToBinary {
 
-    // Function to convert decimal to binary
-    public static String toBinary(int decimal) {
-        if (decimal < 0) {
-            throw new IllegalArgumentException("Invalid input: Decimal number must be non-negative.");
+    public static String toBinary(Object decimal) {
+        if (decimal instanceof Integer) {
+            int decimalInt = (Integer) decimal;
+            if (decimalInt < 0) {
+                throw new IllegalArgumentException("Invalid input: Decimal number must be non-negative.");
+            }
+            return Integer.toBinaryString(decimalInt);
+        } else {
+            throw new IllegalArgumentException("Invalid input: Decimal number must be integer.");
         }
-        return Integer.toBinaryString(decimal);
     }
 
     // Main method to test the function
