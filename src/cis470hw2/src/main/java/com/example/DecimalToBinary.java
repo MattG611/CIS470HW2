@@ -1,3 +1,4 @@
+package com.example;
 public class DecimalToBinary {
 
     // Function to convert decimal to binary

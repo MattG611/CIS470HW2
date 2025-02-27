@@ -1,3 +1,4 @@
+package com.example;
 public class FibonacciNum {
 
     // Function to calculate the nth Fibonacci number
