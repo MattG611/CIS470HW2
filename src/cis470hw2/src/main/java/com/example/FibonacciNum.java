@@ -6,6 +6,9 @@ public class FibonacciNum {
         if (n < 0) {
             throw new IllegalArgumentException("Invalid input: n must be a non-negative integer.");
         }
+        if (n > 50) { // Example computational limit
+            throw new IllegalArgumentException("Error: Input exceeds computational limits.");
+        }
         if (n == 0)
             return 0;
         if (n == 1)

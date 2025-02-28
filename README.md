@@ -56,7 +56,7 @@
 * **For input:** "racecar" (palindrome)
   **Output:** "racecar" (same as input, as it's a palindrome)
 * **For input:** "ThisStringIsSuperLongAndIsUsedForTestingPurposesOnlyInThisAssignment" (large but valid string - BVT max-)
-  **Output:** "tnemmAssiTnIylnoesoruPgnitseTroFdesUdnAgnorSgnirtSsiht"
+  **Output:** "tnemngissAsihTnIylnOsesopruPgnitseTroFdesUsIdnAgnoLrepuSsIgnirtSsihT"
 
 ###### Invalid Input Error Message:
 
@@ -156,11 +156,26 @@
 * max : Max n the function can handle efficiently
 * max+ : Exceeding computationally feasible n
 
-###### Valid Inputs:
+**Valid Inputs:**
 
-###### Expected Outputs:
+* **n = 0** (Minimum valid input)
+* **n = 1** (Minimum+ case)
+* **n > 0** (General valid cases, e.g., n = 5, 10, ...)
+* n = Large n below computational limit (Maximum- case)
+* n = Max n the function can handle efficiently(Maximum case)
 
-###### Invalid Input Error Message:
+###### **Expected Outputs:**
+
+* **For n = 0:** Function-specific result.
+* **For n = 1:** Expected computed result.
+* **For n > 0:** Correct computed output based on function logic.
+* **For large n:** Computed output within feasible range.
+
+###### **Invalid Input Error Messages:**
+
+* For n < 0 (Negative values):  "Error: Input must be a non-negative integer"
+* For non-integer values: "Error: Input must be an integer"
+* For n > max feasible n: "Error: Input exceeds computational limits."
 
 ## 5.) Check if a Given String is a Valid ISBN Number
 
@@ -180,6 +195,38 @@
 
 ###### Valid Inputs:
 
+Valid ISBN-10:
+
+* **"0471958697"** (Valid numeric ISBN-10)
+* **"0-471-95869-7"** (Valid ISBN-10 with dashes)
+* **"0306406152"** (Another valid ISBN-10)
+* **"0-306-40615-2"** (Same with dashes)
+* **"123456789X"** (Valid ISBN-10 with 'X' as a checksum)
+
+Valid ISBN-13:
+
+* **"9780470059029"** (Valid numeric ISBN-13)
+* **"978-0-470-05902-9"** (Valid ISBN-13 with dashes)
+* **"9780306406157"** (Another valid ISBN-13)
+* **"978-0-306-40615-7"** (Same with dashes)
+
 ###### Expected Outputs:
 
-###### Invalid Input Error Message:
+* If the input is a valid ISBN-10 or ISBN-13:
+  Output: "Valid ISBN"
+* If the input is not a valid ISBN:
+  Output: "Invalid ISBN"
+
+###### Invalid Input Error Messages:
+
+Wrong-length inputs:
+
+* **"123456789"** (Too short for ISBN-10) → **"Error: ISBN must be 10 or 13 characters long."**
+* **"12345678901"** (11 characters, invalid) → **"Error: ISBN must be 10 or 13 characters long."**
+* **"123456789012"** (12 characters, invalid) → **"Error: ISBN must be 10 or 13 characters long."**
+* **"12345678901234"** (Too long) → **"Error: ISBN must be 10 or 13 characters long."**
+
+Non-numeric characters (except 'X' for ISBN-10 last digit):
+
+* **"ABC4567890"** → "Error: ISBN contains invalid characters."
+* **"978A470059029"** → "Error: ISBN contains invalid characters."

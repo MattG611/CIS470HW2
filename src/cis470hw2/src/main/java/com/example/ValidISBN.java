@@ -7,14 +7,20 @@ public class ValidISBN {
             throw new IllegalArgumentException("Invalid input: ISBN cannot be null or empty.");
         }
 
-        isbn = isbn.replaceAll("-", ""); // Remove hyphens for validation
+        isbn = isbn.replaceAll("-", "").trim(); // Remove hyphens and trim whitespace
+
+        // Check for invalid characters
+        if (!isbn.matches("[0-9X]+")) {
+            throw new IllegalArgumentException("Invalid input: ISBN contains invalid characters.");
+        }
 
         if (isbn.length() == 10) {
             return isValidISBN10(isbn);
         } else if (isbn.length() == 13) {
             return isValidISBN13(isbn);
         } else {
-            throw new IllegalArgumentException("Invalid input: ISBN must be a 10- or 13-digit number.");
+            throw new IllegalArgumentException(
+                    "Invalid input: ISBN must be a 10- or 13-digit number, but found length: " + isbn.length());
         }
     }
 
